@@ -13,6 +13,40 @@
 
   <body class="page-body">
     <header class="header">
+      <div class="container">
+        <div class="flex">
+          <div class="header_logo">
+            <picture>
+              <source
+                srcset="img/logo_tab.png"
+                media="(min-width:720px) "
+                type="image/png"
+              />
+              <source
+                srcset="img/logo_mob.png"
+                media="(min-width:320px)"
+                type="image/png"
+              />
+              <img src="img/logo_mob.png" alt="Логотип" />
+            </picture>
+          </div>
+          <div class="header_contact">
+            <div class="header_contact--mobile">
+              <a class="link" href="tel:+78469707077">8 846 970-70-77</a>
+            </div>
+            <div class="header_contact--desktop">
+              <div class="contacts contacts-wrapper">
+                <div class="contacts_worktime flex flex-col">
+                  <p>ВС-ЧТ с 12-00 до 00-00</p>
+                  <p>ПТ-СБ с 12-00 до 02-00</p>
+                </div>
+                <a class="link" href="tel:+78469707077">8 846 970-70-77</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </header>
 
     <main class="page"></main>
