@@ -1,2 +1,102 @@
 .header {
+  padding: 14px 0 11px;
+  background-color: $whiteColor;
+  &_contact {
+    margin-left: auto;
+    &--mobile {
+      a {
+        display: flex;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: $orangeColor;
+        background-image: url(../img/phone.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+    }
+    &--desktop {
+      display: none;
+      }
+    }
+  }
+
+  @media(min-width: $md) {
+    .header {
+      padding: 37px 0 49px;
+      &_contact {
+        &--mobile {
+          display: none;
+        }
+        &--desktop {
+          display: block;
+          .contacts {
+            &_worktime {
+              position: relative;
+              font-weight: 600;
+              &::before {
+                position: absolute;
+                left: -60px;
+                display: block;
+                content: '';
+                width: 41px;
+                height: 41px;
+                background-color: $orangeColor;
+                border-radius: 50%;
+                background-image: url(../img/phone.png);
+                background-position: center center;
+                background-repeat: no-repeat;
+        
+
+              }
+            }
+            a {
+              position: relative;
+              display: flex;
+              align-items: center;
+              margin-top: 23px;
+              color:$titleColor;
+              font-weight: 600;
+              &::before {
+                position: absolute;
+                left: -60px;
+                display: block;
+                content: '';
+                width: 41px;
+                height: 41px;
+                background-color: $orangeColor;
+                border-radius: 50%;
+                background-image: url(../img/clock.svg);
+                background-position: 52% 50%;
+                background-repeat: no-repeat;
+              }
+            }
+          }
+        }
+      }
+  }
+}
+
+  @media(min-width: $lg) {
+    .header {
+      padding: 37px 0 25px;
+      .flex {
+        align-items: center;
+      }
+      &_contact {
+        &--desktop {
+          .contacts {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &_worktime {
+              margin-right: 105px;
+            }
+            a {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+  }
 }

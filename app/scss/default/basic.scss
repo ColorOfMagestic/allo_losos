@@ -35,14 +35,16 @@ body {
 }
 
 @media(min-width: $md) {
-  .container {
-    // width: 89.33%;
-  }
 }
 
 @media(min-width: $lg) {
   .container {
-    // width: 72.92%;
+    width: 80%;
+  }
+}
+@media(min-width: $hg) {
+  .container {
+    width: 61%;
   }
 }
 
