@@ -1,0 +1,210 @@
+.intro {
+  position: relative;
+  background-color: $orangeColor;
+  padding: 90px 0 312px;
+  overflow: hidden;
+  &_text {
+    text-transform: uppercase;
+    text-align: center;
+    span {
+      display: block;
+    }
+  }
+  &_arrow {
+    width: 41px;
+    height: 54px;
+    margin: 25px;
+    background-image: url(../img/arr_here.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    animation: slide 0.7s linear infinite alternate;
+  }
+  a {
+    width: 80%;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: $whiteColor;
+    background: linear-gradient(180deg, #b465b4 0%, #7280de 100%);
+    box-shadow: 0px 0px 26px #7a7eda;
+
+    border-radius: 67px;
+    transition: color 0.5s;
+    &:hover {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  &_decor {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    &:nth-of-type(1) {
+      top: 5%;
+      left: -5%;
+      background-image: url(../img/intro/roll.png);
+    }
+    &:nth-of-type(2) {
+      bottom: 15%;
+      left: 0;
+      background-image: url(../img/intro/roll_2.png);
+    }
+    &:nth-of-type(3) {
+      top: 3%;
+      right: -5%;
+      background-image: url(../img/intro/roll_3.png);
+    }
+    &:nth-of-type(4) {
+      display: none;
+      background-image: url(../img/intro/sticks.png);
+    }
+    &:nth-of-type(5) {
+      bottom: 8%;
+      right: -8%;
+      width: 200px;
+      height: 200px;
+      background-image: url(../img/intro/dish.png);
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+@media(min-width: $md) {
+  .intro {
+    padding: 64px 0 160px;
+    &_text {
+      font-size: 21px;
+      span {
+        display: inline;
+      }
+    }
+    a {
+      width: 50%;
+    }
+    &_decor {
+      &:nth-of-type(1) {
+        width: 286px;
+        height: 320px;
+        top: 2%;
+        left: 0;
+        background-image: url(../img/intro/roll_tab.png);
+      }
+      &:nth-of-type(2) {
+        width: 340px;
+        height: 196px;
+        bottom: 15%;
+        left: -11%;
+        background-image: url(../img/intro/roll_2_tab.png);
+      }
+      &:nth-of-type(3) {
+        width: 240px;
+        height: 201px;
+        top: 5%;
+        right: -3%;
+        background-image: url(../img/intro/roll_3_tab.png);
+      }
+      &:nth-of-type(4) {
+        top: 25%;
+        left: 0%;
+        display: block;
+        width: 210px;
+        height: 270px;
+        background-image: url(../img/intro/sticks.png);
+      }
+      &:nth-of-type(5) {
+        bottom: 8%;
+        right: -8%;
+        width: 306px;
+        height: 257px;
+        background-image: url(../img/intro/dish.png);
+      }
+    }
+  }
+  
+}
+
+@media(min-width: $lg) {
+  .intro {
+    padding: 52px 0 137px;
+    &_text {
+      width: 40%;
+    }
+    a {
+      width: 30%;
+    }
+    &_decor {
+      &:nth-of-type(1) {
+        width: 338px;
+        height: 254px;
+        top: 2%;
+        left: 10%;
+        background-image: url(../img/intro/roll_d.png);
+      }
+      &:nth-of-type(2) {
+        width: 280px;
+        height: 161px;
+        bottom: 15%;
+        left: 10%;
+        background-image: url(../img/intro/roll_2_d.png);
+      }
+      &:nth-of-type(3) {
+        width: 288px;
+        height: 216px;
+        top: 5%;
+        right: 10%;
+        background-image: url(../img/intro/roll_3_d.png);
+      }
+      &:nth-of-type(4) {
+        top: 25%;
+        left: 5%;
+        display: block;
+        width: 328px;
+        height: 245px;
+        background-image: url(../img/intro/sticks_d.png);
+      }
+      &:nth-of-type(5) {
+        bottom: 8%;
+        right: 5%;
+        width: 366px;
+        height: 308px;
+        background-image: url(../img/intro/dish_d.png);
+      }
+    }
+  }
+  
+}
+@media(min-width: $hg) {
+  .intro {
+    &_decor {
+      &:nth-of-type(1) {
+        left: 20%;
+      }
+      &:nth-of-type(2) {
+        left: 20%;
+      }
+      &:nth-of-type(3) {
+        right: 20%;
+      }
+      &:nth-of-type(4) {
+        left: 17%;
+      }
+      &:nth-of-type(5) {
+        right: 15%;
+      }
+    }
+  }
+  
+}
+
