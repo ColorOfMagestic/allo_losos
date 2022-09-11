@@ -46,7 +46,6 @@
           </div>
         </div>
       </div>
-
     </header>
 
     <main class="page">
@@ -55,17 +54,28 @@
           <div class="intro_content flex flex-col flex-cs">
             <div class="intro_content-image">
               <picture>
-              <source srcset="img/intro/gift_default.png" media="(min-width:720px) " type="image/png">
-              <source srcset="img/intro/gift_mob.png" media="(min-width:320px)" type="image/png">
-              <img src="img/intro/gift_mob.png" alt="Подарок">
+                <source
+                  srcset="img/intro/gift_default.png"
+                  media="(min-width:720px) "
+                  type="image/png"
+                />
+                <source
+                  srcset="img/intro/gift_mob.png"
+                  media="(min-width:320px)"
+                  type="image/png"
+                />
+                <img src="img/intro/gift_mob.png" alt="Подарок" />
               </picture>
-              
             </div>
-            <p class="title title-size--md intro_text">ЖМИ НА КНОПКУ 
-             <span>И получи</span>
-              бесплатно ПОДАРОК</p>
-              <span class="arrow intro_arrow"></span>
-              <a class="link flex flex-cc" href="">Получить подарок</a>
+            <p class="title title-size--md intro_text">
+              ЖМИ НА КНОПКУ
+              <span>И получи</span>
+              бесплатно ПОДАРОК
+            </p>
+            <span class="arrow intro_arrow"></span>
+            <a class="link flex flex-cc" href="https://t.me/allo_lososbot"
+              >Получить подарок</a
+            >
           </div>
         </div>
         <span class="intro_decor abs"> </span>
@@ -74,7 +84,45 @@
         <span class="intro_decor abs"></span>
         <span class="intro_decor abs"></span>
       </section>
-      
+      <section class="promotion">
+        <div class="container">
+          <h2 class="title title-size--md promotion_title">
+            Акции и предложения
+          </h2>
+          <div class="promotion-swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide promotion-swiper_slide">
+                <div class="promotion-swiper_slide-image">
+                  <img src="img/slider/slider_img.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide promotion-swiper_slide">
+                <div class="promotion-swiper_slide-image">
+                  <img src="img/slider/slider_img_2.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide promotion-swiper_slide">
+                <div class="promotion-swiper_slide-image">
+                  <img src="img/slider/slider_img_3.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-group flex flex-cc">
+              <button
+                data-control="promotion_prev"
+                class="swiper-button-prev btn"
+              ></button>
+              <button
+                data-control="promotion_next"
+                class="swiper-button-next btn"
+              ></button>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </section>
     </main>
 
     <footer class="footer"></footer>

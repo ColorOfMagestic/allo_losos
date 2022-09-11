@@ -1,0 +1,129 @@
+.promotion {
+  padding: 40px 0;
+  background-color: $whiteColor;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  &_title {
+    text-align: center;
+    font-size: 35px;
+  }
+  &-swiper {
+    margin-top: 24px;
+    &_slide {
+      overflow: hidden;
+      border-radius: 15px;
+      &-image {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 15px;
+        filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.2));
+      }
+    }
+    .swiper-button-group {
+      position: relative;
+      width: 55%;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      z-index: 12;
+      button {
+        position: relative;
+        left: 0;
+        right: 0;
+        width: 42px;
+        height: 42px;
+        margin: 0;
+        background-color: #f1b853;
+        box-shadow: 0px 3.17647px 3.17647px rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+      }
+      .swiper-button-prev::after {
+        width: 18px;
+        height: 25px;
+        content: "";
+        background-image: url(../img/slider/arr_left.svg);
+      }
+      .swiper-button-next::after {
+        width: 18px;
+        height: 25px;
+        content: "";
+        background-image: url(../img/slider/arr_right.svg);
+      }
+      .swiper-button-next {
+        margin-left: auto;
+      }
+    }
+
+    .swiper-pagination {
+      bottom: 28px;
+      .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+
+        background-color: $whiteColor;
+        border: 1px solid #f2b94d;
+        opacity: 1;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: #f2b94d;
+      }
+    }
+  }
+}
+
+@media (min-width: $md) {
+  .promotion {
+    padding: 56px 0;
+    &_title {
+      font-size: 40px;
+    }
+    &-swiper {
+      margin-top: 41px;
+      .swiper-button-group {
+        width: 45%;
+        button {
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      .swiper-pagination {
+        .swiper-pagination-bullet {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: $lg) {
+  .promotion {
+    padding: 67px 0 48px;
+    &-swiper {
+      margin-top: 54px;
+      &_slide {
+        &-image {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+      .swiper-button-group {
+        position: absolute;
+        top: 40%;
+        margin: 0;
+        width: 100%;
+        .swiper-button-prev {
+        }
+      }
+      .swiper-pagination {
+        position: relative;
+        padding-top: 43px;
+        bottom: 0;
+        .swiper-pagination-bullet {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+}
